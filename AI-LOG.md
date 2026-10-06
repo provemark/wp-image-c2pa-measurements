@@ -118,5 +118,11 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   was right, but the page still had the emoji, because a block theme's
   template is passed through `wptexturize()` and `convert_smilies()` again
   (`get_the_block_template_html()`, wp-includes/block-template.php); switching
-  the `use_smilies` option off covers both.
+  the `use_smilies` option off covers both.- Measured, the same four settings with a classic theme (Twenty Twenty-One
+  2.9, `results/2026-10-06-text-classic-*`): the same outcome as with the
+  block theme. The plain sentence is `Valid` throughout, the punctuated text
+  only with both `run_wptexturize` and `use_smilies` off, and the page carries
+  the rendered content byte for byte in every case. `bin/text-measure.sh` now
+  records the active theme. The default theme was switched back afterwards.
+- Decided by Maurice: measure a classic theme too.
 

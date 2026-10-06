@@ -44,6 +44,7 @@ pass() { [ "$1" = admin ] && echo "$PASS_admin" || echo "$PASS_author"; }  # bas
   echo "date: $(date -u +%Y-%m-%dT%H:%MZ)"
   echo "wordpress: $(w core version), php: $(docker exec "$WEB" php -r 'echo PHP_VERSION;')"
   echo "c2patool: $("$T" --version) (unstable_plain_text)"
+  echo "theme: $(w theme list --status=active --field=name) $(w theme list --status=active --field=version)"
 } > "$OUT/config.txt"
 : > "$OUT/result.txt"
 

@@ -1,0 +1,30 @@
+== plain-simple (14231 bytes, Valid)
+plain-simple / admin / classic: stored         14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / admin / classic: rendered (API)   14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / admin / classic: page                       contains the rendered content byte for byte (same result as rendered)
+plain-simple / admin / block: stored           14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / admin / block: rendered (API)   14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / admin / block: page                       contains the rendered content byte for byte (same result as rendered)
+plain-simple / text-author / classic: stored   14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / text-author / classic: rendered (API)   14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / text-author / classic: page                       contains the rendered content byte for byte (same result as rendered)
+plain-simple / text-author / block: stored     14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / text-author / block: rendered (API)   14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / text-author / block: page                       contains the rendered content byte for byte (same result as rendered)
+plain-simple / uploaded .txt: file             14231 bytes    4030 selectors  same as signed: yes  Valid
+plain-simple / uploaded .txt: served           14231 bytes    4030 selectors  same as signed: yes  Valid
+== plain (14319 bytes, Valid)
+plain / admin / classic: stored                14319 bytes    4030 selectors  same as signed: yes  Valid
+plain / admin / classic: rendered (API)        14321 bytes    4030 selectors  same as signed: no   Invalid assertion.dataHash.mismatch,assertion.dataHash.mismatch
+plain / admin / classic: page                       contains the rendered content byte for byte (same result as rendered)
+plain / admin / block: stored                  14319 bytes    4030 selectors  same as signed: yes  Valid
+plain / admin / block: rendered (API)          14321 bytes    4030 selectors  same as signed: no   Invalid assertion.dataHash.mismatch,assertion.dataHash.mismatch
+plain / admin / block: page                       contains the rendered content byte for byte (same result as rendered)
+plain / text-author / classic: stored          14319 bytes    4030 selectors  same as signed: yes  Valid
+plain / text-author / classic: rendered (API)   14321 bytes    4030 selectors  same as signed: no   Invalid assertion.dataHash.mismatch,assertion.dataHash.mismatch
+plain / text-author / classic: page                       contains the rendered content byte for byte (same result as rendered)
+plain / text-author / block: stored            14319 bytes    4030 selectors  same as signed: yes  Valid
+plain / text-author / block: rendered (API)    14321 bytes    4030 selectors  same as signed: no   Invalid assertion.dataHash.mismatch,assertion.dataHash.mismatch
+plain / text-author / block: page                       contains the rendered content byte for byte (same result as rendered)
+plain / uploaded .txt: file                    14319 bytes    4030 selectors  same as signed: yes  Valid
+plain / uploaded .txt: served                  14319 bytes    4030 selectors  same as signed: yes  Valid

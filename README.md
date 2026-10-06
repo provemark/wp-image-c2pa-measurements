@@ -91,12 +91,12 @@ TEXT_C2PATOOL=/path/to/c2patool bin/text-measure.sh results/<date>-text
 The settings measured on 2026-10-06, for a text with `--`, `...`, quotes, an
 apostrophe and `:)`:
 
-| setting | what the visitor gets |
-|---|---|
-| defaults | `Invalid` |
-| `add_filter('run_wptexturize', '__return_false');` | `Invalid` (`:)` still becomes an emoji) |
-| `add_filter('option_use_smilies', '__return_zero');` | `Invalid` (punctuation still rewritten) |
-| both | `Valid` |
+| setting | block theme (Twenty Twenty-Five) | classic theme (Twenty Twenty-One) |
+|---|---|---|
+| defaults | `Invalid` | `Invalid` |
+| `add_filter('run_wptexturize', '__return_false');` | `Invalid` (`:)` still becomes an emoji) | `Invalid` |
+| `add_filter('option_use_smilies', '__return_zero');` | `Invalid` (punctuation still rewritten) | `Invalid` |
+| both | `Valid` | `Valid` |
 
 Removing `convert_smilies` from `the_content` is not enough with a block theme:
 WordPress runs `wptexturize()` and `convert_smilies()` over the whole block
