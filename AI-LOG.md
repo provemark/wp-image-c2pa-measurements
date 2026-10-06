@@ -67,5 +67,10 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   adds `-strip all` only when the version matches `/0.7/` (unique.php). The
   first debug run found no log because the file is named
   `ewwwio-debug-<id>.log`; the pattern was fixed. Results in
-  `results/2026-10-06-x86/ewww-debug/`.
+  `results/2026-10-06-x86/ewww-debug/`.- Measured (run 37488025520), the three conditions EWWW checks before
+  `-strip all`, printed by `bin/ewww-strip-check.php`: `metadata_remove` is
+  `'1'`, `metadata_skip_full` is false, and `test_binary()` returns exactly
+  `'OptiPNG version 7.9.1'`, on which `preg_match('/0.7/', ...)` gives 0. The
+  version check is the one that fails, as reported in
+  nosilver4u/ewww-image-optimizer#389.
 

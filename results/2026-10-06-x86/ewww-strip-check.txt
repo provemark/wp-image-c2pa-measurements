@@ -1,0 +1,8 @@
+ewww: 880
+optipng path: '/var/www/html/wp-content/ewww/optipng'
+test_binary() returned: 'OptiPNG version 7.9.1'
+preg_match('/0.7/', that): 0
+metadata_remove: '1'
+metadata_skip_full: false
+OptiPNG version 7.9.1
+Copyright (C) 2001-2025 Cosmin Truta and the Contributing Authors.
