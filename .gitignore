@@ -4,3 +4,4 @@
 !/fixtures/SHA256SUMS
 /work/
 .DS_Store
+.idea/
