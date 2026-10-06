@@ -11,6 +11,10 @@ on:
         description: Only EWWW with the PNG, with EWWW's debug log
         type: boolean
         default: false
+      ewww_strip_check:
+        description: Only print EWWW's conditions for optipng -strip all
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -55,6 +59,15 @@ jobs:
         run: |
           DIR=results/$(date -u +%Y-%m-%d)-x86
           echo "DIR=$DIR" >> "$GITHUB_ENV"
+          if [ "${{ inputs.ewww_strip_check }}" = "true" ]; then
+            source bin/env.sh
+            docker exec "$CLI" wp plugin install ewww-image-optimizer --activate >/dev/null 2>&1
+            jar=$(mktemp); curl -s -c "$jar" -o /dev/null --data 'log=admin&pwd=password&testcookie=1' -b 'wordpress_test_cookie=WP%20Cookie%20check' "http://localhost:$PORT/wp-login.php"
+            curl -s -b "$jar" -o /dev/null "http://localhost:$PORT/wp-admin/"
+            docker cp bin/ewww-strip-check.php "$WEB:/tmp/ewww-strip-check.php"
+            mkdir -p "$DIR"; docker exec -u www-data "$WEB" php /tmp/ewww-strip-check.php | tee "$DIR/ewww-strip-check.txt"
+            exit 0
+          fi
           if [ "${{ inputs.ewww_debug_png }}" = "true" ]; then
             SETUP="update_option('ewww_image_optimizer_debug', true);" \
             POST="$POST_EWWW echo \"\n--- EWWW debug log ---\n\"; foreach (glob(WP_CONTENT_DIR . '/ewww/*debug*.log') ?: [] as \$f) { echo file_get_contents(\$f); }" \
