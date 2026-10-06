@@ -6,9 +6,11 @@
 # Usage: bin/measure.sh <out-dir> <fixture> [plugin-slug[@version]]
 #   SETUP='php code'   run with `wp eval` after activation (one setting, say)
 #   WAIT=seconds       how long to keep WP-Cron going after the upload (30)
+#   POST='php code'    run with `wp eval` before cleaning up, {ID} = the attachment;
+#                      its output goes to after.txt (a plugin's own record, say)
 set -u
 source "$(dirname "$0")/env.sh"
-OUT=$1; FIXTURE=$2; PLUGIN=${3:-}; SETUP=${SETUP:-}; WAIT=${WAIT:-30}
+OUT=$1; FIXTURE=$2; PLUGIN=${3:-}; SETUP=${SETUP:-}; WAIT=${WAIT:-30}; POST=${POST:-}
 MEASURED="webp-uploads ewww-image-optimizer webp-converter-for-media webp-express wp-smushit wp-optimize resmushit-image-optimizer"
 mkdir -p "$OUT"; WORK=$ROOT/work/$(basename "$OUT"); rm -rf "$WORK"; mkdir -p "$WORK"
 w() { docker exec "$CLI" wp "$@" 2>/dev/null; }
@@ -65,6 +67,8 @@ for u in $(grep -oE 'https?://[^" ,]+\.(jpe?g|png|gif|webp|avif)' "$OUT/frontend
   curl -s -H 'Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8' -o "$local_copy" "$u"
   printf "%-72s %9s %s\n" "${u#*wp-content/}" "$(wc -c < "$local_copy" | tr -d ' ')" "$(check "$local_copy")" >> "$OUT/served.txt"
 done
+
+[ -n "$POST" ] && w eval "${POST//\{ID\}/$ID}" > "$OUT/after.txt"
 
 # leave the site as it was: the attachment, and every file this run wrote
 w post delete "$ID" --force >/dev/null

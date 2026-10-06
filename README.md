@@ -74,7 +74,10 @@ wp-env. Rebuilding the containers undoes both.
 - **Not measured:** plugins that need an account (Imagify, ShortPixel,
   Optimole, TinyPNG, LiteSpeed, Image Optimizer).
 - **EWWW on arm64.** EWWW ships its compression tools for x86; on an arm64
-  machine its own compression step does not run, only its resizing.
+  machine its own compression step does not run, only its resizing. The
+  workflow `Measure on x86` (`.github/workflows/x86.yml`, started by hand)
+  measures WordPress and EWWW on GitHub's x86 runners, with EWWW's own record
+  of each file in `after.txt`.
 - **Three images.** Enough to show what happens, not to give percentages.
 - **A date.** Plugins change. Each results folder is what happened that day,
   with those versions.

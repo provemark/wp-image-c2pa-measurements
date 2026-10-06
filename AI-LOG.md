@@ -35,3 +35,17 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   images through Smush's, reSmush.it's and Jetpack's services; reporting the
   CDN finding as Automattic/jetpack#53217; this repository, local and private
   until he decides otherwise.
+
+## 2026-10-06 — EWWW on x86, in GitHub Actions
+
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: "zet de repository privé op GitHub"; "zet de EWWW-meting op in GitHub
+  Actions".
+- Produced: the private repository provemark/wp-image-c2pa-measurements;
+  `.github/workflows/x86.yml` (WordPress alone and EWWW, three images, on
+  ubuntu-24.04, results as an artifact); `POST` in `bin/measure.sh` (PHP run
+  before cleaning up, its output in `after.txt`); README.
+- Measured: `POST` tried locally with EWWW and the small image (EWWW records
+  nothing on arm64, as expected).
+- Decided by Maurice: the private repository; the x86 measurement.
+

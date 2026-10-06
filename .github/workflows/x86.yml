@@ -1,0 +1,66 @@
+name: Measure on x86
+
+# EWWW Image Optimizer ships its compression tools for x86 only, so on an arm64
+# machine only its resize step can be measured. This runs WordPress alone and
+# EWWW with the three test images on GitHub's x86 runners. Started by hand.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  measure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: composer
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install
+        run: |
+          composer install --no-interaction --no-progress
+          npm ci --no-audit --no-fund
+
+      - name: Fixtures
+        run: bin/fetch-fixtures.sh
+
+      - name: WordPress
+        run: |
+          npx wp-env start
+          bin/prepare.sh
+
+      - name: Measure
+        env:
+          # EWWW's own record of each file it handled, read before the run cleans up
+          POST_EWWW: >-
+            global $wpdb;
+            $rows = $wpdb->get_results($wpdb->prepare("SELECT path, resize, orig_size, image_size, level, pending, backup FROM {$wpdb->prefix}ewwwio_images WHERE attachment_id = %d ORDER BY id", {ID}), ARRAY_A);
+            echo "ewww record for attachment {ID}: ", count($rows), " rows\n";
+            foreach ($rows as $r) { printf("%-60s resize=%-6s orig=%-8s now=%-8s level=%-3s pending=%s backup=%s\n", basename($r["path"]), $r["resize"] ?? "-", $r["orig_size"] ?? "-", $r["image_size"] ?? "-", $r["level"] ?? "-", $r["pending"], $r["backup"] ? "yes" : "no"); }
+        run: |
+          DIR=results/$(date -u +%Y-%m-%d)-x86
+          echo "DIR=$DIR" >> "$GITHUB_ENV"
+          for img in fixture-signed.jpg adobe-20260425-lightroom-classic-church.jpg openai-20260826-c2pa_2x.png; do
+            bin/measure.sh "$DIR/core/${img%.*}" "$img"
+            POST="$POST_EWWW" WAIT=90 bin/measure.sh "$DIR/ewww-image-optimizer/${img%.*}" "$img" ewww-image-optimizer
+          done
+          echo "runner: $(uname -m), $(lsb_release -ds 2>/dev/null)" > "$DIR/RUNNER.txt"
+          php bin/summarize.php "$DIR" > "$DIR/SUMMARY.md"
+          cat "$DIR/SUMMARY.md"
+          cat "$DIR"/ewww-image-optimizer/*/after.txt
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-x86
+          path: results/
