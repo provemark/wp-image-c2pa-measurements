@@ -1,0 +1,8 @@
+ewww record for attachment 8: 7 rows
+adobe-20260425-lightroom-classic-church.jpg                  resize=full   orig=1107238  now=207342   level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-300x224.jpg          resize=medium orig=34462    now=7488     level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-1024x765.jpg         resize=large  orig=76078    now=46780    level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-150x150.jpg          resize=thumbnail orig=30945    now=4201     level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-768x574.jpg          resize=medium_large orig=58829    now=30417    level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-1536x1148.jpg        resize=1536x1536 orig=120306   now=88758    level=10  pending=0 backup=no
+adobe-20260425-lightroom-classic-church-2048x1530.jpg        resize=2048x2048 orig=174534   now=140039   level=10  pending=0 backup=no

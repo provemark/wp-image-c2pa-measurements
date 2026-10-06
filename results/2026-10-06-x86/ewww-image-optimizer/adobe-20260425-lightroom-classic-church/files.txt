@@ -1,0 +1,8 @@
+file written (under wp-content/)                                             bytes format   c2pa state    failures
+uploads/2026/10/adobe-20260425-lightroom-classic-church-1024x765.jpg         46780 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-150x150.jpg           4201 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-1536x1148.jpg        88758 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-2048x1530.jpg       140039 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-300x224.jpg           7488 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-768x574.jpg          30417 jpeg no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church.jpg                 207342 jpeg no - -

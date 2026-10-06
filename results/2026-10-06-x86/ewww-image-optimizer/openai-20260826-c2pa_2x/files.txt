@@ -1,0 +1,6 @@
+file written (under wp-content/)                                             bytes format   c2pa state    failures
+uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png                       1038675 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-150x150.png                          42899 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-300x225.png                         113936 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-768x576.png                         615859 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x.png                                2152105 png yes Invalid assertion.dataHash.mismatch

@@ -54,5 +54,11 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   ("The uploaded file could not be moved"); macOS's Docker hides this. Fixed:
   `bin/prepare.sh` makes `wp-content` and its uploads writable, and
   `bin/measure.sh` now exits with an error when the upload fails, so such a
-  run is red.
+  run is red.- Measured, second workflow run (37482806966, x86_64, Ubuntu 24.04): WordPress
+  alone gives the same as on arm64. EWWW 8.8.0 with its own tools: the large
+  JPEG replaced by a 2560 px copy without credentials (its record: 7 files,
+  level 10); the OpenAI PNG's original optimised losslessly from 2,210,928 to
+  2,152,105 bytes with its `caBX` chunk kept, so the signed original on the
+  server is now `Invalid` (`assertion.dataHash.mismatch`), no backup; the
+  small JPEG not processed (no record). Results in `results/2026-10-06-x86/`.
 
