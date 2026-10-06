@@ -1,0 +1,6 @@
+served (Accept: image/avif,image/webp)                                       bytes format   c2pa state    failures
+uploads/2026/10/adobe-20260425-lightroom-classic-church-1024x765.avif        51383 isobmff no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-1536x1148.avif       70626 isobmff no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-2048x1530.avif       93684 isobmff no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-300x224.avif         31602 isobmff no - -
+uploads/2026/10/adobe-20260425-lightroom-classic-church-768x574.avif         43165 isobmff no - -

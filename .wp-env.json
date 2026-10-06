@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/wp-env.json",
+    "core": null,
+    "phpVersion": "8.3",
+    "port": 8894,
+    "testsEnvironment": false,
+    "mappings": {
+        "wp-content/c2pa-fixtures": "./fixtures"
+    }
+}

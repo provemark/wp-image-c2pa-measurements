@@ -1,0 +1,7 @@
+date: 2026-10-06T14:00Z
+wordpress: 7.1.2, php: 8.3.35
+plugin: ewww-image-optimizer 8.8.0
+wp-admin visited: 200
+fixture: adobe-20260425-lightroom-classic-church.jpg (a6c4ed0319cf43f8…)
+editor: EWWWIO_Imagick_Editor
+attachment: 43

@@ -1,0 +1,12 @@
+{
+    "name": "provemark/wp-image-c2pa-measurements",
+    "description": "What WordPress, image plugins and image CDNs do to C2PA Content Credentials, measured.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "provemark/c2pa-verifier": "^0.4"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

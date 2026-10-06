@@ -1,0 +1,11 @@
+{
+  "name": "wp-image-c2pa-measurements",
+  "private": true,
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^11.16.0"
+  }
+}

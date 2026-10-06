@@ -1,0 +1,2 @@
+served (Accept: image/avif,image/webp)                                       bytes format   c2pa state    failures
+uploads/2026/10/fixture-signed.jpg                                            2113 jpeg no - -

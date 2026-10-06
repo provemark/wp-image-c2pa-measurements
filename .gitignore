@@ -1,0 +1,6 @@
+/vendor/
+/node_modules/
+/fixtures/*
+!/fixtures/SHA256SUMS
+/work/
+.DS_Store

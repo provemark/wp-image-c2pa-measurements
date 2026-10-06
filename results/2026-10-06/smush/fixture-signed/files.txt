@@ -1,0 +1,3 @@
+file written (under wp-content/)                                             bytes format   c2pa state    failures
+uploads/2026/10/fixture-signed.bak.jpg                                       96939 jpeg yes Valid -
+uploads/2026/10/fixture-signed.jpg                                            2384 jpeg no - -

@@ -1,0 +1,7 @@
+date: 2026-10-06T14:16Z
+wordpress: 7.1.2, php: 8.3.35
+plugin: resmushit-image-optimizer 1.0.6
+wp-admin visited: 200
+fixture: fixture-signed.jpg (b004c197b6bf32c3…)
+editor: WP_Image_Editor_Imagick
+attachment: 51
