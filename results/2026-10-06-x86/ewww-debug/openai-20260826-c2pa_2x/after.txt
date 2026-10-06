@@ -1,0 +1,1325 @@
+ewww record for attachment 5: 5 rows
+openai-20260826-c2pa_2x.png                                  resize=full   orig=2210928  now=2152105  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-300x225.png                          resize=medium orig=114305   now=113936   level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-1024x768.png                         resize=large  orig=1039047  now=1038675  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-150x150.png                          resize=thumbnail orig=43028    now=42899    level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-768x576.png                          resize=medium_large orig=616075   now=615859   level=10  pending=0 backup=no
+
+--- EWWW debug log ---
+2026-10-06 15:21:34
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_media_optimize&nonce=24f3c0f86b
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+<b>EWWW\Tracking::schedule_send()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>EWWW\Plugin::register_settings()</b>
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::exec_init()</b>
+<b>EWWW\Plugin::tool_init()</b>
+<b>EWWW\Local::install_tools()</b>
+Checking/Installing tools in /var/www/html/wp-content/ewww/
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+CPU architecture: x86_64
+wp-content/ewww permissions: 0777
+<b>EWWW\Local::install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/var/www/html/wp-content/ewww/jpegtran
+/var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/gifsicle
+/var/www/html/wp-content/ewww/pngquant
+/var/www/html/wp-content/ewww/cwebp
+Linux/UNIX style OS, checking permissions
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/jpegtran: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/gifsicle: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/pngquant: 0755
+permissions ok
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+doing wp_ewwwio_media_optimize
+<b>EWWW\Background_Process::maybe_handle()</b>
+wp_ewwwio_media_optimize checking for valid nonce
+2026-10-06 15:21:34
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:21:39
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:21:44
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:21:49
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:21:54
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:21:59
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:04
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:09
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:14
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:22
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+<b>EWWW\Background_Process::is_process_running()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_media_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file gone or expired
+less than 100 attachments, not running _optimized_list()
+<b>EWWW\Background_Process::handle()</b>
+<b>EWWW\Background_Process_Media::get_batch()</b>
+<b>EWWW\Background_Process::get_batch()</b>
+selected items for media-async: 1
+<b>EWWW\Background_Process::update_lock()</b>
+no key, generated: media-async6ac5122ba0da64.80903478PZPccO9gI
+saved key to lock file
+<b>ewww_image_optimizer_fetch_metadata_batch()</b>
+fetching meta for 1 attachments
+<b>ewww_image_optimizer_query_metadata_batch()</b>
+fetched 2 attachment meta items (final)
+<b>EWWW\Background_Process_Media::task()</b>
+first attempt on new upload, going to sleep for a second
+background processing 5, type: image/png
+<b>EWWW\Background_Process_Media::process_attachment()</b>
+attachment id: 5
+this is a newly uploaded image from the async queue
+<b>ewww_image_optimizer_attachment_path()</b>
+using prefetched _wp_attached_file
+WP (filtered) thinks the file is at: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+retrieved file path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Background_Process_Media::queue_single_size()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+(maybe) queuing optimization for 5/full
+<b>EWWW\Background_Process_Media::should_optimize_size()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+inserted db record
+processing resizes
+processing size: medium
+maybe optimizing openai-20260826-c2pa_2x-300x225.png
+<b>EWWW\Background_Process_Media::queue_single_size()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+(maybe) queuing optimization for 5/medium
+<b>EWWW\Background_Process_Media::should_optimize_size()</b>
+inserted db record
+processing size: large
+maybe optimizing openai-20260826-c2pa_2x-1024x768.png
+<b>EWWW\Background_Process_Media::queue_single_size()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+(maybe) queuing optimization for 5/large
+<b>EWWW\Background_Process_Media::should_optimize_size()</b>
+inserted db record
+processing size: thumbnail
+maybe optimizing openai-20260826-c2pa_2x-150x150.png
+<b>EWWW\Background_Process_Media::queue_single_size()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+(maybe) queuing optimization for 5/thumbnail
+<b>EWWW\Background_Process_Media::should_optimize_size()</b>
+inserted db record
+processing size: medium_large
+maybe optimizing openai-20260826-c2pa_2x-768x576.png
+<b>EWWW\Background_Process_Media::queue_single_size()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+(maybe) queuing optimization for 5/medium_large
+<b>EWWW\Background_Process_Media::should_optimize_size()</b>
+inserted db record
+<b>EWWW\Background_Process::is_process_running()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file gone or expired
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_media_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: media-async6ac5122ba0da64.80903478PZPccO9gI
+stored key is media-async6ac5122ba0da64.80903478PZPccO9gI
+process key is media-async6ac5122ba0da64.80903478PZPccO9gI
+<b>EWWW\Background_Process_Media::complete()</b>
+2026-10-06 15:22:26
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+<b>EWWW\Tracking::schedule_send()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>EWWW\Plugin::register_settings()</b>
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::exec_init()</b>
+<b>EWWW\Plugin::tool_init()</b>
+<b>EWWW\Local::install_tools()</b>
+Checking/Installing tools in /var/www/html/wp-content/ewww/
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+CPU architecture: x86_64
+wp-content/ewww permissions: 0777
+<b>EWWW\Local::install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/var/www/html/wp-content/ewww/jpegtran
+/var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/gifsicle
+/var/www/html/wp-content/ewww/pngquant
+/var/www/html/wp-content/ewww/cwebp
+Linux/UNIX style OS, checking permissions
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/jpegtran: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/gifsicle: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/pngquant: 0755
+permissions ok
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+doing wp_ewwwio_image_optimize
+<b>EWWW\Background_Process::maybe_handle()</b>
+wp_ewwwio_image_optimize checking for valid nonce
+nonce was valid, lock key is 
+<b>EWWW\Background_Process::is_process_running()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file gone or expired
+not already running, checking queue
+queue has items, lets handle them...
+<b>EWWW\Background_Process::handle()</b>
+<b>EWWW\Background_Process::get_batch()</b>
+selected items for single-async: 5
+<b>EWWW\Background_Process::update_lock()</b>
+no key, generated: single-async6ac5122da5f113.35563661KrkRCH
+saved key to lock file
+<b>EWWW\Background_Process_Image::task()</b>
+background processing item 2 (record 1)
+Array
+(
+    [id] => 2
+    [attachment_id] => 1
+    [attempts] => 0
+    [new] => 1
+    [convert_once] => 0
+    [force_reopt] => 0
+    [force_smart] => 0
+    [webp_only] => 0
+)
+
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+this key is still active: single-async6ac5122da5f113.35563661KrkRCH
+<b>EWWW_Image::__construct()</b>
+Array
+(
+    [id] => 1
+    [attachment_id] => 5
+    [gallery] => media
+    [resize] => full
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+    [converted] => 
+    [image_size] => 
+    [orig_size] => 2210928
+    [backup] => 
+    [retrieve] => 
+    [level] => 
+    [resized_width] => 
+    [resized_height] => 
+    [resize_error] => 
+    [webp_size] => 
+    [webp_error] => 
+    [pending] => 1
+    [updates] => 
+    [updated] => 2026-10-06 15:22:21
+)
+
+<b>EWWW_Image::time_estimate()</b>
+estimated time for this image is 15
+processing background optimization request for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png, converting: 0
+<b>EWWW\Background_Process_Image::process_image()</b>
+processing 1: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png, previous attempts: 0
+<b>ewww_image_optimizer_stl_check()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+<b>ewww_image_optimizer()</b>
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+<b>EWWW\Local::test_binary()</b>
+testing case: nice at /usr/bin/nice
+/usr/bin/nice: 0
+nice found
+original filesize: 2210928
+<b>EWWW\Backup::store_local_backup()</b>
+not using local backups
+<b>ewww_image_optimizer_is_animated_png()</b>
+found IDAT, but no acTL (animated) chunk in PNG
+PNG to JPG conversion turned off
+<b>ewww_image_optimizer_check_table()</b>
+checking for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png with size: 2210928
+<b>EWWW\Local::get_path()</b>
+<b>EWWW\Local::check_tool()</b>
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+found /var/www/html/wp-content/ewww/optipng, testing...
+<b>EWWW\Local::check_integrity()</b>
+/var/www/html/wp-content/ewww/optipng: 57d9e2336fc1f5f3ffbacb0f9683d3aecc67cc963de597fef009faa0e2d02f95
+checksum verified, binary is intact
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/ewww/optipng
+7f454c46
+ewwwio type: application/x-executable
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+using: /var/www/html/wp-content/ewww/optipng
+<b>EWWW\Local::get_path()</b>
+pngout disabled
+<b>EWWW\Local::get_path()</b>
+pngquant disabled
+<b>EWWW\Local::get_path()</b>
+cwebp disabled
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png.tmp.png'
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png.tmp.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>ewww_image_optimizer_webp_create()</b>
+folder mode: 16895
+attempting chmod with 438
+<b>ewww_image_optimizer_update_table()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+found a match for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+savings: 2152105 (new) vs. 2210928 (orig)
+original and new file are different size: Reduced by 2.7% (57.4 KB)
+<b>ewww_image_optimizer_update_savings()</b>
+updating existing record (1), path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png, size: 2152105
+Array
+(
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+    [converted] => 
+    [level] => 10
+    [image_size] => 2152105
+    [updates] => 1
+    [backup] => 
+    [pending] => 0
+)
+
+updated 1 records successfully
+2026-10-06 15:22:26
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Background_Process_Image::task()</b>
+background processing item 3 (record 2)
+Array
+(
+    [id] => 3
+    [attachment_id] => 2
+    [attempts] => 0
+    [new] => 1
+    [convert_once] => 0
+    [force_reopt] => 0
+    [force_smart] => 0
+    [webp_only] => 0
+)
+
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+this key is still active: single-async6ac5122da5f113.35563661KrkRCH
+<b>EWWW_Image::__construct()</b>
+Array
+(
+    [id] => 2
+    [attachment_id] => 5
+    [gallery] => media
+    [resize] => medium
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png
+    [converted] => 
+    [image_size] => 
+    [orig_size] => 114305
+    [backup] => 
+    [retrieve] => 
+    [level] => 
+    [resized_width] => 
+    [resized_height] => 
+    [resize_error] => 
+    [webp_size] => 
+    [webp_error] => 
+    [pending] => 1
+    [updates] => 
+    [updated] => 2026-10-06 15:22:21
+)
+
+<b>EWWW_Image::time_estimate()</b>
+estimated time for this image is 4
+processing background optimization request for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png, converting: 0
+<b>EWWW\Background_Process_Image::process_image()</b>
+processing 2: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png, previous attempts: 0
+<b>ewww_image_optimizer_stl_check()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+<b>ewww_image_optimizer()</b>
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+<b>EWWW\Local::test_binary()</b>
+testing case: nice at /usr/bin/nice
+/usr/bin/nice: 0
+nice found
+original filesize: 114305
+<b>EWWW\Backup::store_local_backup()</b>
+not using local backups
+<b>ewww_image_optimizer_is_animated_png()</b>
+found IDAT, but no acTL (animated) chunk in PNG
+PNG to JPG conversion turned off
+<b>ewww_image_optimizer_check_table()</b>
+checking for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png with size: 114305
+<b>EWWW\Local::get_path()</b>
+<b>EWWW\Local::get_path()</b>
+pngout disabled
+<b>EWWW\Local::get_path()</b>
+pngquant disabled
+<b>EWWW\Local::get_path()</b>
+cwebp disabled
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png.tmp.png'
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png.tmp.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>ewww_image_optimizer_webp_create()</b>
+folder mode: 16895
+attempting chmod with 438
+<b>ewww_image_optimizer_update_table()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+found a match for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png
+savings: 113936 (new) vs. 114305 (orig)
+original and new file are different size: Reduced by 0.3% (369 B)
+<b>ewww_image_optimizer_update_savings()</b>
+updating existing record (2), path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png, size: 113936
+Array
+(
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png
+    [converted] => 
+    [level] => 10
+    [image_size] => 113936
+    [updates] => 1
+    [backup] => 
+    [pending] => 0
+)
+
+updated 1 records successfully
+2026-10-06 15:22:27
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:29
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Background_Process_Image::task()</b>
+background processing item 4 (record 3)
+Array
+(
+    [id] => 4
+    [attachment_id] => 3
+    [attempts] => 0
+    [new] => 1
+    [convert_once] => 0
+    [force_reopt] => 0
+    [force_smart] => 0
+    [webp_only] => 0
+)
+
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+this key is still active: single-async6ac5122da5f113.35563661KrkRCH
+<b>EWWW_Image::__construct()</b>
+Array
+(
+    [id] => 3
+    [attachment_id] => 5
+    [gallery] => media
+    [resize] => large
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png
+    [converted] => 
+    [image_size] => 
+    [orig_size] => 1039047
+    [backup] => 
+    [retrieve] => 
+    [level] => 
+    [resized_width] => 
+    [resized_height] => 
+    [resize_error] => 
+    [webp_size] => 
+    [webp_error] => 
+    [pending] => 1
+    [updates] => 
+    [updated] => 2026-10-06 15:22:21
+)
+
+<b>EWWW_Image::time_estimate()</b>
+estimated time for this image is 15
+processing background optimization request for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png, converting: 0
+<b>EWWW\Background_Process_Image::process_image()</b>
+processing 3: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png, previous attempts: 0
+<b>ewww_image_optimizer_stl_check()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+<b>ewww_image_optimizer()</b>
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+<b>EWWW\Local::test_binary()</b>
+testing case: nice at /usr/bin/nice
+/usr/bin/nice: 0
+nice found
+original filesize: 1039047
+<b>EWWW\Backup::store_local_backup()</b>
+not using local backups
+<b>ewww_image_optimizer_is_animated_png()</b>
+found IDAT, but no acTL (animated) chunk in PNG
+PNG to JPG conversion turned off
+<b>ewww_image_optimizer_check_table()</b>
+checking for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png with size: 1039047
+<b>EWWW\Local::get_path()</b>
+<b>EWWW\Local::get_path()</b>
+pngout disabled
+<b>EWWW\Local::get_path()</b>
+pngquant disabled
+<b>EWWW\Local::get_path()</b>
+cwebp disabled
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png.tmp.png'
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png.tmp.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>ewww_image_optimizer_webp_create()</b>
+folder mode: 16895
+attempting chmod with 438
+<b>ewww_image_optimizer_update_table()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+found a match for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png
+savings: 1038675 (new) vs. 1039047 (orig)
+original and new file are different size: Reduced by 0.0% (372 B)
+<b>ewww_image_optimizer_update_savings()</b>
+updating existing record (3), path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png, size: 1038675
+Array
+(
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png
+    [converted] => 
+    [level] => 10
+    [image_size] => 1038675
+    [updates] => 1
+    [backup] => 
+    [pending] => 0
+)
+
+updated 1 records successfully
+2026-10-06 15:22:29
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Background_Process_Image::task()</b>
+background processing item 5 (record 4)
+Array
+(
+    [id] => 5
+    [attachment_id] => 4
+    [attempts] => 0
+    [new] => 1
+    [convert_once] => 0
+    [force_reopt] => 0
+    [force_smart] => 0
+    [webp_only] => 0
+)
+
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+this key is still active: single-async6ac5122da5f113.35563661KrkRCH
+<b>EWWW_Image::__construct()</b>
+Array
+(
+    [id] => 4
+    [attachment_id] => 5
+    [gallery] => media
+    [resize] => thumbnail
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png
+    [converted] => 
+    [image_size] => 
+    [orig_size] => 43028
+    [backup] => 
+    [retrieve] => 
+    [level] => 
+    [resized_width] => 
+    [resized_height] => 
+    [resize_error] => 
+    [webp_size] => 
+    [webp_error] => 
+    [pending] => 1
+    [updates] => 
+    [updated] => 2026-10-06 15:22:21
+)
+
+<b>EWWW_Image::time_estimate()</b>
+estimated time for this image is 1
+processing background optimization request for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png, converting: 0
+<b>EWWW\Background_Process_Image::process_image()</b>
+processing 4: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png, previous attempts: 0
+<b>ewww_image_optimizer_stl_check()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+<b>ewww_image_optimizer()</b>
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+<b>EWWW\Local::test_binary()</b>
+testing case: nice at /usr/bin/nice
+/usr/bin/nice: 0
+nice found
+original filesize: 43028
+<b>EWWW\Backup::store_local_backup()</b>
+not using local backups
+<b>ewww_image_optimizer_is_animated_png()</b>
+found IDAT, but no acTL (animated) chunk in PNG
+PNG to JPG conversion turned off
+<b>ewww_image_optimizer_check_table()</b>
+checking for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png with size: 43028
+<b>EWWW\Local::get_path()</b>
+<b>EWWW\Local::get_path()</b>
+pngout disabled
+<b>EWWW\Local::get_path()</b>
+pngquant disabled
+<b>EWWW\Local::get_path()</b>
+cwebp disabled
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png.tmp.png'
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png.tmp.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>ewww_image_optimizer_webp_create()</b>
+folder mode: 16895
+attempting chmod with 438
+<b>ewww_image_optimizer_update_table()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+found a match for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png
+savings: 42899 (new) vs. 43028 (orig)
+original and new file are different size: Reduced by 0.3% (129 B)
+<b>ewww_image_optimizer_update_savings()</b>
+updating existing record (4), path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png, size: 42899
+Array
+(
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png
+    [converted] => 
+    [level] => 10
+    [image_size] => 42899
+    [updates] => 1
+    [backup] => 
+    [pending] => 0
+)
+
+updated 1 records successfully
+2026-10-06 15:22:30
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_attachment_update&nonce=79ec70c9aa
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+<b>EWWW\Tracking::schedule_send()</b>
+<b>ewww_image_optimizer_upgrade()</b>
+<b>EWWW\Plugin::register_settings()</b>
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::exec_init()</b>
+<b>EWWW\Plugin::tool_init()</b>
+<b>EWWW\Local::install_tools()</b>
+Checking/Installing tools in /var/www/html/wp-content/ewww/
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+CPU architecture: x86_64
+wp-content/ewww permissions: 0777
+<b>EWWW\Local::install_paths()</b>
+CPU architecture: x86_64
+generated paths:
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/jpegtran-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/gifsicle-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/pngquant-linux
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/cwebp-linux
+/var/www/html/wp-content/ewww/jpegtran
+/var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/gifsicle
+/var/www/html/wp-content/ewww/pngquant
+/var/www/html/wp-content/ewww/cwebp
+Linux/UNIX style OS, checking permissions
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/jpegtran: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/gifsicle: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+permissions ok
+<b>EWWW\Local::check_permissions()</b>
+permissions for /var/www/html/wp-content/ewww/pngquant: 0755
+permissions ok
+<b>ewww_image_optimizer_cron_setup()</b>
+<b>ewww_image_optimizer_ajax_compat_check()</b>
+doing wp_ewwwio_attachment_update
+<b>EWWW\Background_Process::maybe_handle()</b>
+wp_ewwwio_attachment_update checking for valid nonce
+nonce was valid, lock key is 
+<b>EWWW\Background_Process::is_process_running()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_attachment_update_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file gone or expired
+not already running, checking queue
+queue has items, lets handle them...
+<b>EWWW\Background_Process::handle()</b>
+<b>EWWW\Background_Process::get_batch()</b>
+selected items for attachment-update: 1
+<b>EWWW\Background_Process::update_lock()</b>
+no key, generated: attachment-update6ac51236d64893.88380346JJhGnmfH
+saved key to lock file
+<b>EWWW\Background_Process_Attachment_Update::task()</b>
+updating attachment 5
+<b>ewww_image_optimizer_post_optimize_attachment()</b>
+running post opt for attachment 5
+<b>ewww_image_optimizer_update_filesize_metadata()</b>
+<b>ewww_image_optimizer_attachment_path()</b>
+WP (filtered) thinks the file is at: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+updating full to 2152105
+updating medium to 113936
+updating large to 1038675
+updating thumbnail to 42899
+updating medium_large to 615859
+<b>ewww_image_optimizer_update_scaled_metadata()</b>
+<b>ewww_image_optimizer_attachment_path()</b>
+WP (filtered) thinks the file is at: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png
+Does /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-scaled.png exist?
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_attachment_update_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: attachment-update6ac51236d64893.88380346JJhGnmfH
+stored key is attachment-update6ac51236d64893.88380346JJhGnmfH
+process key is attachment-update6ac51236d64893.88380346JJhGnmfH
+2026-10-06 15:22:30
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Background_Process_Image::task()</b>
+background processing item 6 (record 5)
+Array
+(
+    [id] => 6
+    [attachment_id] => 5
+    [attempts] => 0
+    [new] => 1
+    [convert_once] => 0
+    [force_reopt] => 0
+    [force_smart] => 0
+    [webp_only] => 0
+)
+
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+this key is still active: single-async6ac5122da5f113.35563661KrkRCH
+<b>EWWW_Image::__construct()</b>
+Array
+(
+    [id] => 5
+    [attachment_id] => 5
+    [gallery] => media
+    [resize] => medium_large
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png
+    [converted] => 
+    [image_size] => 
+    [orig_size] => 616075
+    [backup] => 
+    [retrieve] => 
+    [level] => 
+    [resized_width] => 
+    [resized_height] => 
+    [resize_error] => 
+    [webp_size] => 
+    [webp_error] => 
+    [pending] => 1
+    [updates] => 
+    [updated] => 2026-10-06 15:22:21
+)
+
+<b>EWWW_Image::time_estimate()</b>
+estimated time for this image is 7
+processing background optimization request for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png, converting: 0
+<b>EWWW\Background_Process_Image::process_image()</b>
+processing 5: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png, previous attempts: 0
+<b>ewww_image_optimizer_stl_check()</b>
+<b>ewww_image_optimizer_should_resize()</b>
+<b>ewww_image_optimizer()</b>
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>EWWW\Local::find_nix_binary()</b>
+checking for bundled tool
+<b>EWWW\Local::test_binary()</b>
+testing case: nice at /usr/bin/nice
+/usr/bin/nice: 0
+nice found
+original filesize: 616075
+<b>EWWW\Backup::store_local_backup()</b>
+not using local backups
+<b>ewww_image_optimizer_is_animated_png()</b>
+found IDAT, but no acTL (animated) chunk in PNG
+PNG to JPG conversion turned off
+<b>ewww_image_optimizer_check_table()</b>
+checking for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png with size: 616075
+<b>EWWW\Local::get_path()</b>
+<b>EWWW\Local::get_path()</b>
+pngout disabled
+<b>EWWW\Local::get_path()</b>
+pngquant disabled
+<b>EWWW\Local::get_path()</b>
+cwebp disabled
+<b>EWWW\Local::test_binary()</b>
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+optimizer found
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png.tmp.png'
+<b>EWWW\Base::mimetype()</b>
+testing mimetype: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png.tmp.png
+89504e470d0a1a0a0000000d
+ewwwio type: image/png
+<b>ewww_image_optimizer_webp_create()</b>
+folder mode: 16895
+attempting chmod with 438
+<b>ewww_image_optimizer_update_table()</b>
+<b>ewww_image_optimizer_find_already_optimized()</b>
+found a match for /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png
+savings: 615859 (new) vs. 616075 (orig)
+original and new file are different size: Reduced by 0.0% (216 B)
+<b>ewww_image_optimizer_update_savings()</b>
+updating existing record (5), path: /var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png, size: 615859
+Array
+(
+    [path] => ABSPATHwp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png
+    [converted] => 
+    [level] => 10
+    [image_size] => 615859
+    [updates] => 1
+    [backup] => 
+    [pending] => 0
+)
+
+updated 1 records successfully
+queueing async metadata update for 5
+<b>EWWW\Background_Process::is_process_running()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_attachment_update_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file gone or expired
+attachment update process idle, dispatching post-haste
+2026-10-06 15:22:30
+request uri is /wp-admin/admin-ajax.php?action=wp_ewwwio_image_optimize&nonce=f80e5bb131
+<b>EWWW\Background_Process::is_key_valid()</b>
+<b>EWWW\Background_Process::get_process_lock()</b>
+lock dir is /var/www/html/wp-content/ewww/
+checking /var/www/html/wp-content/ewww/.wp_ewwwio_image_optimize_process_lock
+<b>EWWW\Background_Process::is_disk_lock_valid()</b>
+process lock file in place
+retrieved lock key: single-async6ac5122da5f113.35563661KrkRCH
+stored key is single-async6ac5122da5f113.35563661KrkRCH
+process key is single-async6ac5122da5f113.35563661KrkRCH
+2026-10-06 15:22:32
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:37
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:42
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:47
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:52
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:22:57
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>
+2026-10-06 15:23:02
+request uri is /wp-cron.php
+<b>EWWW\Base::__construct()</b>
+plugin (resource) content_url: http://localhost:8894/wp-content/ewww/
+plugin (resource) content_dir: /var/www/html/wp-content/ewww/
+home url: http://localhost:8894/
+relative home url: //localhost:8894/
+home domain: localhost
+<b>EWWW\Plugin::instance()</b>
+<b>EWWW\Backup::__construct()</b>
+<b>EWWW\Local::__construct()</b>
+<b>EWWW\Local::exec_check()</b>
+exec appears to be enabled
+<b>EWWW\Local::skip_tools()</b>
+enabled: gifsicle
+enabled: jpegtran
+enabled: optipng
+<b>EWWW\Plugin::cloud_init()</b>
+<b>EWWW\Plugin::plugins_compat()</b>
+checking active plugins
+<b>EWWW\Plugin::init()</b>

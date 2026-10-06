@@ -60,5 +60,12 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   level 10); the OpenAI PNG's original optimised losslessly from 2,210,928 to
   2,152,105 bytes with its `caBX` chunk kept, so the signed original on the
   server is now `Invalid` (`assertion.dataHash.mismatch`), no backup; the
-  small JPEG not processed (no record). Results in `results/2026-10-06-x86/`.
+  small JPEG not processed (no record). Results in `results/2026-10-06-x86/`.- Measured, EWWW with its debug log (runs 37485743347, 37486499757): the PNG
+  original came out the same twice (2,152,105 bytes, `Invalid`). EWWW ran
+  `optipng -o2 -quiet` without `-strip all`, although "remove metadata" is on
+  by default: its bundled optipng reports "OptiPNG version 7.9.1", and EWWW
+  adds `-strip all` only when the version matches `/0.7/` (unique.php). The
+  first debug run found no log because the file is named
+  `ewwwio-debug-<id>.log`; the pattern was fixed. Results in
+  `results/2026-10-06-x86/ewww-debug/`.
 

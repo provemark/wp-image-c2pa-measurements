@@ -1,0 +1,8 @@
+date: 2026-10-06T15:21Z
+wordpress: 7.1.2, php: 8.3.35
+plugin: ewww-image-optimizer 8.8.0
+wp-admin visited: 200
+setup: update_option('ewww_image_optimizer_debug', true);
+fixture: openai-20260826-c2pa_2x.png (1b97b9432729a0a1…)
+editor: EWWWIO_Imagick_Editor
+attachment: 5
