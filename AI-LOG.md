@@ -91,3 +91,24 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   original came out 2,128,496 bytes without the C2PA chunk, not `Invalid`.
 - Decided by Maurice: none yet (whether and what to reply on #389).
 
+## 2026-10-06 — Text through WordPress
+
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: measure what WordPress does to text with C2PA Content Credentials
+  (option B, "akkoord, begin met B").
+- Produced: `bin/text-measure.sh`; `text-fixtures/` (two texts, unsigned and
+  signed with a c2patool 0.28.1 built with `unstable_plain_text` and the
+  public test certificate); a `.wp-env.json` mapping for them; README;
+  `results/2026-10-06-text/`.
+- Measured: both texts are stored byte for byte, for an administrator and for
+  an author, classic and block (`kses` keeps the variation selectors), and an
+  uploaded `.txt` is served unchanged: `Valid`. What WordPress renders is
+  `Valid` for a sentence without punctuation WordPress rewrites, and `Invalid`
+  (`assertion.dataHash.mismatch`) for a text with `--`, `...`, straight quotes,
+  an apostrophe and `:)`: they come out as an em dash, an ellipsis, curly
+  quotes and an emoji. The page contains the rendered content byte for byte.
+  A first version took the page's text from the theme's markup and also caught
+  the comment form, so every page looked `Invalid`; it now checks the page for
+  the rendered content instead.
+- Decided by Maurice: measure text (B).
+

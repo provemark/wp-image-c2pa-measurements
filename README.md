@@ -67,6 +67,26 @@ and forwards the site's port inside the container, so that WordPress's
 requests to itself arrive. Without the forward, background jobs never run in
 wp-env. Rebuilding the containers undoes both.
 
+## Text
+
+Text can carry Content Credentials too (C2PA 2.4 §A.8): the manifest is
+appended as invisible Unicode variation selectors. `bin/text-measure.sh`
+saves two signed texts as posts over the REST API, as an administrator and as
+an author (whose content WordPress filters), in classic form and in a
+paragraph block, and uploads them as `.txt` files. It checks what is stored,
+what the API renders, whether the page carries that rendered content byte for
+byte, and the uploaded file. The signed texts are in `text-fixtures/`, made
+with the public c2patool test certificate.
+
+The stock `c2patool` does not read text yet; text support in `c2pa-rs` is
+behind the experimental `unstable_plain_text` feature. Build `c2patool` 0.28.1
+with `unstable_plain_text` added to its `c2pa` features and pass it as
+`TEXT_C2PATOOL`:
+
+```sh
+TEXT_C2PATOOL=/path/to/c2patool bin/text-measure.sh results/<date>-text
+```
+
 ## Limits
 
 - **Defaults.** Other settings give other results. A setting that keeps
