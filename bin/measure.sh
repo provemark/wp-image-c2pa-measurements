@@ -3,7 +3,7 @@
 # jobs run, then check every file WordPress and the plugin wrote, and every
 # image URL the page hands a visitor, for C2PA Content Credentials.
 #
-# Usage: bin/measure.sh <out-dir> <fixture> [plugin-slug[@version]]
+# Usage: bin/measure.sh <out-dir> <fixture> [plugin-slug[@version] | plugin-slug=zip-url]
 #   SETUP='php code'   run with `wp eval` after activation (one setting, say)
 #   WAIT=seconds       how long to keep WP-Cron going after the upload (30)
 #   POST='php code'    run with `wp eval` before cleaning up, {ID} = the attachment;
@@ -20,8 +20,19 @@ for p in $MEASURED; do w plugin deactivate "$p" >/dev/null; done
   echo "date: $(date -u +%Y-%m-%dT%H:%MZ)"
   echo "wordpress: $(w core version), php: $(docker exec "$WEB" php -r 'echo PHP_VERSION;')"
   if [ -n "$PLUGIN" ]; then
-    slug=${PLUGIN%@*}; version=${PLUGIN#*@}; [ "$version" = "$PLUGIN" ] && version=
-    w plugin install "$slug" ${version:+--version="$version"} --force >/dev/null
+    if [[ "$PLUGIN" == *=* ]]; then
+      # a build that isn't on wordpress.org (a fix on GitHub, say), put under its usual slug
+      slug=${PLUGIN%%=*}; url=${PLUGIN#*=}
+      w plugin delete "$slug" >/dev/null
+      before=$(docker exec "$CLI" ls wp-content/plugins)
+      w plugin install "$url" >/dev/null
+      new=$(comm -13 <(echo "$before") <(docker exec "$CLI" ls wp-content/plugins) | head -1)
+      [ -n "$new" ] && [ "$new" != "$slug" ] && docker exec "$CLI" mv "wp-content/plugins/$new" "wp-content/plugins/$slug"
+      echo "plugin source: $url"
+    else
+      slug=${PLUGIN%@*}; version=${PLUGIN#*@}; [ "$version" = "$PLUGIN" ] && version=
+      w plugin install "$slug" ${version:+--version="$version"} --force >/dev/null
+    fi
     w plugin activate "$slug" >/dev/null
     echo "plugin: $slug $(w plugin get "$slug" --field=version)"
   else
@@ -74,5 +85,5 @@ done
 # leave the site as it was: the attachment, and every file this run wrote
 w post delete "$ID" --force >/dev/null
 while read -r f; do docker exec "$WEB" rm -f "/var/www/html/$f"; done < "$WORK/written.txt"
-[ -n "$PLUGIN" ] && w plugin deactivate "${PLUGIN%@*}" >/dev/null
+[ -n "$PLUGIN" ] && w plugin deactivate "$slug" >/dev/null
 cat "$OUT/config.txt"; echo; cat "$OUT/files.txt"; echo; cat "$OUT/served.txt"

@@ -11,6 +11,10 @@ on:
         description: Only EWWW with the PNG, with EWWW's debug log
         type: boolean
         default: false
+      ewww_zip:
+        description: Measure EWWW from this zip URL instead of wordpress.org (a fix to test)
+        type: string
+        default: ''
       ewww_strip_check:
         description: Only print EWWW's conditions for optipng -strip all
         type: boolean
@@ -59,6 +63,18 @@ jobs:
         run: |
           DIR=results/$(date -u +%Y-%m-%d)-x86
           echo "DIR=$DIR" >> "$GITHUB_ENV"
+          if [ -n "${{ inputs.ewww_zip }}" ]; then
+            for img in fixture-signed.jpg adobe-20260425-lightroom-classic-church.jpg openai-20260826-c2pa_2x.png; do
+              POST="$POST_EWWW" WAIT=90 bin/measure.sh "$DIR/ewww-zip/${img%.*}" "$img" "ewww-image-optimizer=${{ inputs.ewww_zip }}"
+            done
+            source bin/env.sh
+            docker exec "$CLI" wp plugin activate ewww-image-optimizer >/dev/null 2>&1
+            docker cp bin/ewww-strip-check.php "$WEB:/tmp/ewww-strip-check.php"
+            docker exec -u www-data "$WEB" php /tmp/ewww-strip-check.php | tee "$DIR/ewww-zip/ewww-strip-check.txt"
+            echo "runner: $(uname -m), $(lsb_release -ds 2>/dev/null)" > "$DIR/RUNNER.txt"
+            php bin/summarize.php "$DIR" > "$DIR/SUMMARY.md"; cat "$DIR/SUMMARY.md"; cat "$DIR"/ewww-zip/*/after.txt
+            exit 0
+          fi
           if [ "${{ inputs.ewww_strip_check }}" = "true" ]; then
             source bin/env.sh
             docker exec "$CLI" wp plugin install ewww-image-optimizer --activate >/dev/null 2>&1
