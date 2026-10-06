@@ -74,3 +74,20 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   version check is the one that fails, as reported in
   nosilver4u/ewww-image-optimizer#389.
 
+## 2026-10-06 — EWWW's fix tested
+
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: "er zijn reacties, kan je zien waarvoor?" — EWWW's author committed a
+  fix for nosilver4u/ewww-image-optimizer#389 (f65b25b, 8.8.0.1) and asked
+  for a test.
+- Produced: `bin/measure.sh` takes `slug=zip-url`; the workflow takes
+  `ewww_zip`, `no_system_optipng` and `png_only`;
+  `results/2026-10-06-x86-ewww-fix/`.
+- Measured: first run (37518270250) not conclusive: EWWW used the system
+  optipng 0.7.8 that `bin/prepare.sh` installs, which the old check matched
+  too. With the system optipng removed and EWWW's debug log on
+  (37519961164): EWWW ran its bundled optipng ("OptiPNG version 7.9.1", same
+  SHA-256 as in the wordpress.org 8.8.0 zip) with `-strip all`; the PNG
+  original came out 2,128,496 bytes without the C2PA chunk, not `Invalid`.
+- Decided by Maurice: none yet (whether and what to reply on #389).
+

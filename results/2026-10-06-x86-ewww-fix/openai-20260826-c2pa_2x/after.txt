@@ -1,0 +1,84 @@
+ewww record for attachment 5: 5 rows
+openai-20260826-c2pa_2x.png                                  resize=full   orig=2210928  now=2128496  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-300x225.png                          resize=medium orig=114305   now=113705   level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-1024x768.png                         resize=large  orig=1039047  now=1038444  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-150x150.png                          resize=thumbnail orig=43028    now=42668    level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-768x576.png                          resize=medium_large orig=616075   now=615628   level=10  pending=0 backup=no
+
+--- EWWW debug log: optipng ---
+enabled: optipng
+enabled: optipng
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/ewww/optipng
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/ewww/optipng
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+found /var/www/html/wp-content/ewww/optipng, testing...
+/var/www/html/wp-content/ewww/optipng: 57d9e2336fc1f5f3ffbacb0f9683d3aecc67cc963de597fef009faa0e2d02f95
+testing mimetype: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+using: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet -strip all  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x.png.tmp.png'
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet -strip all  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-300x225.png.tmp.png'
+enabled: optipng
+enabled: optipng
+enabled: optipng
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/ewww/optipng
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+found /var/www/html/wp-content/ewww/optipng, testing...
+/var/www/html/wp-content/ewww/optipng: 57d9e2336fc1f5f3ffbacb0f9683d3aecc67cc963de597fef009faa0e2d02f95
+testing mimetype: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+using: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet -strip all  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png.tmp.png'
+enabled: optipng
+enabled: optipng
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/ewww/optipng
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+found /var/www/html/wp-content/ewww/optipng, testing...
+/var/www/html/wp-content/ewww/optipng: 57d9e2336fc1f5f3ffbacb0f9683d3aecc67cc963de597fef009faa0e2d02f95
+testing mimetype: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+using: /var/www/html/wp-content/ewww/optipng
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet -strip all  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-150x150.png.tmp.png'
+enabled: optipng
+enabled: optipng
+enabled: optipng
+/var/www/html/wp-content/plugins/ewww-image-optimizer/binaries/optipng-linux
+/var/www/html/wp-content/ewww/optipng
+permissions for /var/www/html/wp-content/ewww/optipng: 0755
+testing case: optipng at /var/www/html/wp-content/ewww/optipng
+/var/www/html/wp-content/ewww/optipng: OptiPNG version 7.9.1
+running: /usr/bin/nice /var/www/html/wp-content/ewww/optipng -o2 -quiet -strip all  '/var/www/html/wp-content/uploads/2026/10/openai-20260826-c2pa_2x-768x576.png.tmp.png'
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng
+enabled: optipng

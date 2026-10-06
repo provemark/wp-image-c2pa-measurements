@@ -1,0 +1,9 @@
+date: 2026-10-06T19:36Z
+wordpress: 7.1.3, php: 8.3.35
+plugin source: https://github.com/nosilver4u/ewww-image-optimizer/archive/f65b25b78f55a32ff3825436cc67c2d219dfab82.zip
+plugin: ewww-image-optimizer 8.8.0.1
+wp-admin visited: 200
+setup: update_option('ewww_image_optimizer_debug', true);
+fixture: openai-20260826-c2pa_2x.png (1b97b9432729a0a1…)
+editor: EWWWIO_Imagick_Editor
+attachment: 5

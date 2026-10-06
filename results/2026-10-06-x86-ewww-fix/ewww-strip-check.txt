@@ -1,0 +1,8 @@
+ewww: 880.11
+optipng path: ''
+test_binary() returned: ''
+preg_match('/0.7/', that): 0
+metadata_remove: '1'
+metadata_skip_full: false
+optipng -v, first lines:
+-
