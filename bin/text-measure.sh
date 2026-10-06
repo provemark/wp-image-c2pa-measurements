@@ -8,6 +8,9 @@
 # `unstable_plain_text` feature (the stock c2patool doesn't read text yet).
 #
 # Usage: TEXT_C2PATOOL=/path/to/c2patool bin/text-measure.sh <out-dir>
+#   TEXTS='plain-simple plain'  which signed texts (default both)
+#   MU='php code'               installed as a must-use plugin for the run, then removed
+#                               (a site setting to try, such as turning wptexturize off)
 set -u
 source "$(dirname "$0")/env.sh"
 OUT=$1; mkdir -p "$OUT"; WORK=$ROOT/work/text; rm -rf "$WORK"; mkdir -p "$WORK"
@@ -44,7 +47,14 @@ pass() { [ "$1" = admin ] && echo "$PASS_admin" || echo "$PASS_author"; }  # bas
 } > "$OUT/config.txt"
 : > "$OUT/result.txt"
 
-for name in plain-simple plain; do
+if [ -n "${MU:-}" ]; then
+  printf '<?php\n// text-measure.sh, removed after the run\n%s\n' "$MU" > "$WORK/text-measure-mu.php"
+  docker exec "$WEB" mkdir -p /var/www/html/wp-content/mu-plugins
+  docker cp "$WORK/text-measure-mu.php" "$WEB:/var/www/html/wp-content/mu-plugins/text-measure-mu.php" >/dev/null
+  echo "mu-plugin: $MU" >> "$OUT/config.txt"
+fi
+
+for name in ${TEXTS:-plain-simple plain}; do
   SIGNED=$ROOT/text-fixtures/$name-signed.txt
   echo "== $name ($(wc -c < "$SIGNED" | tr -d ' ') bytes, $(verdict "$SIGNED"))" >> "$OUT/result.txt"
   for u in admin text-author; do
@@ -87,4 +97,5 @@ for name in plain-simple plain; do
 done
 
 for u in admin text-author; do w user application-password delete "$u" --all >/dev/null; done
+[ -n "${MU:-}" ] && docker exec "$WEB" rm -f /var/www/html/wp-content/mu-plugins/text-measure-mu.php
 cat "$OUT/config.txt" "$OUT/result.txt"

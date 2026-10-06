@@ -110,5 +110,13 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   A first version took the page's text from the theme's markup and also caught
   the comment form, so every page looked `Invalid`; it now checks the page for
   the rendered content instead.
-- Decided by Maurice: measure text (B).
+- Decided by Maurice: measure text (B).- Measured, settings (`MU` in `bin/text-measure.sh`), punctuated text: with
+  `run_wptexturize` false only, still `Invalid` (`:)` becomes an emoji); with
+  `use_smilies` off only, still `Invalid`; with both, `Valid` for both roles
+  and both forms, and the page carries the rendered content byte for byte. A
+  first try removed `convert_smilies` from `the_content`: the API's output
+  was right, but the page still had the emoji, because a block theme's
+  template is passed through `wptexturize()` and `convert_smilies()` again
+  (`get_the_block_template_html()`, wp-includes/block-template.php); switching
+  the `use_smilies` option off covers both.
 

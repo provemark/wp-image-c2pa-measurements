@@ -87,6 +87,22 @@ with `unstable_plain_text` added to its `c2pa` features and pass it as
 TEXT_C2PATOOL=/path/to/c2patool bin/text-measure.sh results/<date>-text
 ```
 
+`MU='php code'` installs a must-use plugin for one run, to try a site setting.
+The settings measured on 2026-10-06, for a text with `--`, `...`, quotes, an
+apostrophe and `:)`:
+
+| setting | what the visitor gets |
+|---|---|
+| defaults | `Invalid` |
+| `add_filter('run_wptexturize', '__return_false');` | `Invalid` (`:)` still becomes an emoji) |
+| `add_filter('option_use_smilies', '__return_zero');` | `Invalid` (punctuation still rewritten) |
+| both | `Valid` |
+
+Removing `convert_smilies` from `the_content` is not enough with a block theme:
+WordPress runs `wptexturize()` and `convert_smilies()` over the whole block
+template as well (`get_the_block_template_html()`), so the `use_smilies` option
+has to be off.
+
 ## Limits
 
 - **Defaults.** Other settings give other results. A setting that keeps
