@@ -15,6 +15,14 @@ on:
         description: Measure EWWW from this zip URL instead of wordpress.org (a fix to test)
         type: string
         default: ''
+      no_system_optipng:
+        description: Remove the system optipng first, so EWWW must use its own
+        type: boolean
+        default: false
+      png_only:
+        description: With ewww_zip, measure only the PNG
+        type: boolean
+        default: false
       ewww_strip_check:
         description: Only print EWWW's conditions for optipng -strip all
         type: boolean
@@ -63,8 +71,14 @@ jobs:
         run: |
           DIR=results/$(date -u +%Y-%m-%d)-x86
           echo "DIR=$DIR" >> "$GITHUB_ENV"
+          if [ "${{ inputs.no_system_optipng }}" = "true" ]; then
+            source bin/env.sh
+            docker exec -u root "$WEB" sh -c 'apt-get remove -y -qq optipng >/dev/null 2>&1; command -v optipng || echo "no optipng on the system"' | tee "$DIR.no-system-optipng.txt"
+          fi
           if [ -n "${{ inputs.ewww_zip }}" ]; then
-            for img in fixture-signed.jpg adobe-20260425-lightroom-classic-church.jpg openai-20260826-c2pa_2x.png; do
+            IMAGES="fixture-signed.jpg adobe-20260425-lightroom-classic-church.jpg openai-20260826-c2pa_2x.png"
+            [ "${{ inputs.png_only }}" = "true" ] && IMAGES="openai-20260826-c2pa_2x.png"
+            for img in $IMAGES; do
               POST="$POST_EWWW" WAIT=90 bin/measure.sh "$DIR/ewww-zip/${img%.*}" "$img" "ewww-image-optimizer=${{ inputs.ewww_zip }}"
             done
             source bin/env.sh
