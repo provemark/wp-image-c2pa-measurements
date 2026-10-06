@@ -48,4 +48,11 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
 - Measured: `POST` tried locally with EWWW and the small image (EWWW records
   nothing on arm64, as expected).
 - Decided by Maurice: the private repository; the x86 measurement.
+- Measured, later the same day: the first run of the workflow (37481312069)
+  was green but measured nothing. On Linux the checkout belongs to the
+  runner's user and the web server could not write `wp-content/uploads`
+  ("The uploaded file could not be moved"); macOS's Docker hides this. Fixed:
+  `bin/prepare.sh` makes `wp-content` and its uploads writable, and
+  `bin/measure.sh` now exits with an error when the upload fails, so such a
+  run is red.
 

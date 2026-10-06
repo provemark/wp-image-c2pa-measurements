@@ -40,6 +40,7 @@ docker exec "$WEB" sh -c 'touch /tmp/c2pa-marker; sleep 1'
 docker cp "$ROOT/bin/sideload.php" "$WEB:/tmp/sideload.php" >/dev/null
 RES=$(docker exec -u www-data "$WEB" php /tmp/sideload.php "/var/www/html/wp-content/c2pa-fixtures/$FIXTURE" 2>&1)
 ID=$(echo "$RES" | head -1)
+case "$ID" in ''|*[!0-9]*) echo "upload failed: $RES" >&2; echo "upload failed: $RES" >> "$OUT/config.txt"; exit 1;; esac
 echo "$RES" | sed -n 2p >> "$OUT/config.txt"
 end=$((SECONDS + WAIT))
 # WP-Cron as an external job runs it: without ?doing_wp_cron, which WordPress only honours
