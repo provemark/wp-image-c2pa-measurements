@@ -6,6 +6,11 @@ name: Measure on x86
 
 on:
   workflow_dispatch:
+    inputs:
+      ewww_debug_png:
+        description: Only EWWW with the PNG, with EWWW's debug log
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -50,6 +55,14 @@ jobs:
         run: |
           DIR=results/$(date -u +%Y-%m-%d)-x86
           echo "DIR=$DIR" >> "$GITHUB_ENV"
+          if [ "${{ inputs.ewww_debug_png }}" = "true" ]; then
+            SETUP="update_option('ewww_image_optimizer_debug', true);" \
+            POST="$POST_EWWW echo \"\n--- EWWW debug log ---\n\"; foreach (glob(WP_CONTENT_DIR . '/ewww/debug*.log') ?: [] as \$f) { echo file_get_contents(\$f); }" \
+            WAIT=90 bin/measure.sh "$DIR/ewww-debug/openai-20260826-c2pa_2x" openai-20260826-c2pa_2x.png ewww-image-optimizer
+            echo "runner: $(uname -m), $(lsb_release -ds 2>/dev/null)" > "$DIR/RUNNER.txt"
+            grep -iE "optipng|strip|running:" "$DIR/ewww-debug/openai-20260826-c2pa_2x/after.txt" | head -40 || true
+            exit 0
+          fi
           for img in fixture-signed.jpg adobe-20260425-lightroom-classic-church.jpg openai-20260826-c2pa_2x.png; do
             bin/measure.sh "$DIR/core/${img%.*}" "$img"
             POST="$POST_EWWW" WAIT=90 bin/measure.sh "$DIR/ewww-image-optimizer/${img%.*}" "$img" ewww-image-optimizer
