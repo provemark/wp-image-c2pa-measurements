@@ -57,7 +57,7 @@ jobs:
           echo "DIR=$DIR" >> "$GITHUB_ENV"
           if [ "${{ inputs.ewww_debug_png }}" = "true" ]; then
             SETUP="update_option('ewww_image_optimizer_debug', true);" \
-            POST="$POST_EWWW echo \"\n--- EWWW debug log ---\n\"; foreach (glob(WP_CONTENT_DIR . '/ewww/debug*.log') ?: [] as \$f) { echo file_get_contents(\$f); }" \
+            POST="$POST_EWWW echo \"\n--- EWWW debug log ---\n\"; foreach (glob(WP_CONTENT_DIR . '/ewww/*debug*.log') ?: [] as \$f) { echo file_get_contents(\$f); }" \
             WAIT=90 bin/measure.sh "$DIR/ewww-debug/openai-20260826-c2pa_2x" openai-20260826-c2pa_2x.png ewww-image-optimizer
             echo "runner: $(uname -m), $(lsb_release -ds 2>/dev/null)" > "$DIR/RUNNER.txt"
             grep -iE "optipng|strip|running:" "$DIR/ewww-debug/openai-20260826-c2pa_2x/after.txt" | head -40 || true
