@@ -161,3 +161,14 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
 - Reasoned: compared the drafts' `<head>` with `articles/path-to-trusted/` on
   the site; the rest of the page frame was already equal.
 - Decided by Maurice: none.
+
+## 2026-10-07 — Measurement dates as a month
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: Maurice was not sure the dates should be named so explicitly; then
+  "ja, pas het zo aan" to the proposal of a month instead of the days.
+- Produced: both `drafts/articles/*/index.html`: the limits item now reads
+  "October 2026" instead of "6 October 2026" (and "7 October"); the exact
+  dates stay in `results/`.
+- Reasoned: the articles show no publication date, so this line is their only
+  anchor in time; a month with the versions is enough for a reader.
+- Decided by Maurice: name the month, not the days.
