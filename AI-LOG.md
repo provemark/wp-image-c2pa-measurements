@@ -151,3 +151,13 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
 - Reasoned: from `results/2026-10-07/NOTE.md`. "Debian ships 0.7.8" is the
   version measured in the wp-env container.
 - Decided by Maurice: add the sentence.
+
+## 2026-10-07 — Both article drafts in the site's new design
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: "zet ze in een lokale kloon van de site" (preview the drafts).
+- Produced: both `drafts/articles/*/index.html`: the Google Fonts links
+  removed and the `favicon.svg` icon added, as in the live articles since the
+  site's new design.
+- Reasoned: compared the drafts' `<head>` with `articles/path-to-trusted/` on
+  the site; the rest of the page frame was already equal.
+- Decided by Maurice: none.
