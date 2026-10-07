@@ -1,0 +1,6 @@
+ewww record for attachment 10: 5 rows
+openai-20260826-c2pa_2x.png                                  resize=full   orig=2210928  now=2152105  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-300x225.png                          resize=medium orig=114305   now=113936   level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-1024x768.png                         resize=large  orig=1039047  now=1038675  level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-150x150.png                          resize=thumbnail orig=43028    now=42899    level=10  pending=0 backup=no
+openai-20260826-c2pa_2x-768x576.png                          resize=medium_large orig=616075   now=615859   level=10  pending=0 backup=no

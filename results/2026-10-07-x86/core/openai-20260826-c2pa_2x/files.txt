@@ -1,0 +1,6 @@
+file written (under wp-content/)                                             bytes format   c2pa state    failures
+uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png                       1038816 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-150x150.png                          42797 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-300x225.png                         114074 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-768x576.png                         615844 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x.png                                2210928 png yes Valid -

@@ -1,0 +1,34 @@
+date: 2026-10-07T05:44Z
+source                                   request    served              bytes  verdict                            pixels
+fixture-signed.jpg                       direct     image/jpeg          96939  jpeg Valid                        
+                                         png/jpeg   image/jpeg           2402  jpeg no-C2PA                       pixels-identical
+                                         webp       image/webp            912  webp no-C2PA                       
+                                         w=1024     image/jpeg           2080  jpeg no-C2PA                       
+adobe-20260425-lightroom-classic-church.jpg direct     image/jpeg        1107238  jpeg Valid                        
+                                         png/jpeg   image/jpeg         913964  jpeg no-C2PA                       pixels-identical
+                                         webp       image/webp         112768  webp no-C2PA                       
+                                         w=1024     image/jpeg          45578  jpeg no-C2PA                       
+openai-20260826-c2pa_2x.png              direct     image/png         2210928  png Valid                         
+                                         png/jpeg   image/png         2157279  png Invalid assertion.dataHash.mismatch pixels-identical
+                                         webp       image/webp        1614592  webp no-C2PA                       
+                                         w=1024     image/png         1077190  png no-C2PA                        
+fixture-signed.png                       direct     image/png           47736  png Valid                         
+                                         png/jpeg   image/png             664  png no-C2PA                        76800-pixels-differ
+                                         webp       image/webp            528  webp no-C2PA                       
+                                         w=1024     image/png             643  png no-C2PA                        
+c2pa-verifier-ai-parent-chain.png        direct     image/png           61711  png Valid                         
+                                         png/jpeg   image/png             664  png no-C2PA                        76800-pixels-differ
+                                         webp       image/webp            528  webp no-C2PA                       
+                                         w=1024     image/png             643  png no-C2PA                        
+fixture-signed.webp                      direct     image/webp         100956  webp Valid                        
+                                         png/jpeg   image/png             537  png no-C2PA                        3619-pixels-differ
+                                         webp       image/webp         100956  webp Valid                         
+                                         w=1024     image/png             537  png no-C2PA                        
+fixture-signed.gif                       direct     image/gif          132525  gif Valid                         
+                                         png/jpeg   image/gif          132525  gif Valid                          pixels-identical
+                                         webp       image/webp            478  webp no-C2PA                       
+                                         w=1024     image/png             712  png no-C2PA                        
+c2pa_2x_openai.png                       direct     image/png         2210928  png Valid                         
+                                         png/jpeg   image/png         2157279  png Invalid assertion.dataHash.mismatch pixels-identical
+                                         webp       image/webp        1614592  webp no-C2PA                       
+                                         w=1024     image/png         1077190  png no-C2PA                        

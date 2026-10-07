@@ -1,0 +1,5 @@
+served (Accept: image/avif,image/webp)                                       bytes format   c2pa state    failures
+uploads/2026/10/openai-20260826-c2pa_2x-1024x768.png                       1038444 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-300x225.png                         113705 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x-768x576.png                         615627 png no - -
+uploads/2026/10/openai-20260826-c2pa_2x.png                                2128496 png no - -

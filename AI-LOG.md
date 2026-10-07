@@ -126,3 +126,18 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   records the active theme. The default theme was switched back afterwards.
 - Decided by Maurice: measure a classic theme too.
 
+
+## 2026-10-07 — Second measurement day
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: whether the articles can be published now; then "doe de meetdag"
+  (run the second measurement day), and commit the results with a note.
+- Produced: `results/2026-10-07/` (with `NOTE.md` and
+  `ewww-without-system-optipng/`), `results/2026-10-07-x86/`.
+- Measured: `bin/run-all.sh` and `bin/cdn-jetpack.sh` on arm64; the x86
+  workflow (run 37577779179). Every row equal to 2026-10-06 except EWWW 8.8.0
+  with the OpenAI PNG on arm64: today no C2PA, yesterday untouched. Measured
+  again with the system optipng (0.7.8) removed from the container: the
+  2026-10-06 result returned byte for byte, so yesterday's arm64 run had no
+  optipng. Reasoned: EWWW passes `-strip all` to optipng 0.7.x, which removes
+  the chunk (issue 389 upstream).
+- Decided by Maurice: run the second measurement day before publishing.
