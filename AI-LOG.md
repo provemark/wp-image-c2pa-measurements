@@ -172,3 +172,20 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
 - Reasoned: the articles show no publication date, so this line is their only
   anchor in time; a month with the versions is enough for a reader.
 - Decided by Maurice: name the month, not the days.
+
+## 2026-10-07 — The repository made public
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: remove the IDE files from the history, move the drafts to a
+  separate private repository, and make this repository public.
+- Produced: the history rewritten without `.idea/` and without `drafts/`
+  (`git filter-repo --path <dir> --invert-paths`); the drafts now live
+  elsewhere, with their own history. Entries above that name `drafts/`
+  describe files that are no longer in this repository.
+- Measured: a fresh clone of the public repository has 22 commits and no
+  commit that touches `.idea/` or `drafts/`.
+- Reasoned: GitHub keeps commits orphaned by a force-push reachable from the
+  Actions and Activity pages, so the repository was deleted and recreated
+  under the same name before it became public; the earlier x86 runs went with
+  it (their results are in `results/`).
+- Decided by Maurice: the drafts in a separate private repository; delete
+  and recreate the repository; make it public.
