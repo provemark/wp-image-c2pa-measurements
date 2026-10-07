@@ -141,3 +141,13 @@ What Claude Code produced in this repository, per session. Newest at the bottom.
   optipng. Reasoned: EWWW passes `-strip all` to optipng 0.7.x, which removes
   the chunk (issue 389 upstream).
 - Decided by Maurice: run the second measurement day before publishing.
+
+## 2026-10-07 — The second day in the image article
+- Model: Claude Opus 5.5, Claude Code CLI
+- Asked: "zet die zin over optipng 0.7 in het artikel".
+- Produced: `drafts/articles/image-plugins-and-content-credentials/index.html`:
+  one sentence that EWWW 8.8.0 with a system optipng 0.7 removes the
+  credentials; the "One day" limit became "Two days".
+- Reasoned: from `results/2026-10-07/NOTE.md`. "Debian ships 0.7.8" is the
+  version measured in the wp-env container.
+- Decided by Maurice: add the sentence.
